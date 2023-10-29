@@ -44,7 +44,7 @@ This project demonstrates the integration of Azure Blob Storage, MATLAB, and OPC
 
 ### Overall Workflow of the Project
 
-This project showcases an automated workflow that enables real-time power consumption forecasting. The workflow begins with a user clicking a button on the Node-RED dashboard. The request is then sent to the OPC UA server, which subsequently transmits the request to MATLAB(it is a client). MATLAB accesses the Azure Blob Storage to retrieve the relevant power consumption data. After preprocessing the data, MATLAB loads the pre-trained model and performs the power consumption forecast. The forecasted data is sent back to the OPC UA server, which, in turn, relays the data to Node-RED. Finally, Node-RED receives the forecasted data and displays it on the dashboard, providing users with valuable insights.
+This project showcases an automated workflow that enables real-time power consumption forecasting. The workflow begins with a user clicking a button on the Node-RED dashboard. The request is then sent to the OPC UA server, which subsequently transmits the request to MATLAB(it is a client). MATLAB accesses the Azure Blob Storage to retrieve the relevant power consumption data. After preprocessing the data, MATLAB loads the pre-trained model and performs the power consumption forecast. The forecasted data and also true data is sent back to the OPC UA server, which, in turn, relays the data to Node-RED. Finally, Node-RED receives the forecasted data and displays it on the dashboard, providing users with valuable insights.
 
 ![Project Workflow](/path/to/your/project_workflow_image.png)
 
